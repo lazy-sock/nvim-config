@@ -1,0 +1,6 @@
+require('plugins.mini')
+require('plugins.lualine')
+require('plugins.lsp')
+require('plugins.mason')
+require('plugins.treesitter')
+require('plugins.fzf')
