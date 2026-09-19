@@ -1,4 +1,4 @@
-vim.pack.add({"https://www.github.com/echasnovski/mini.nvim"})
+vim.pack.add({ "https://www.github.com/echasnovski/mini.nvim" })
 
 require("mini.ai").setup({})
 require("mini.comment").setup({
@@ -18,19 +18,30 @@ require("mini.bufremove").setup({})
 require("mini.notify").setup({})
 require("mini.icons").setup({})
 
-
 -- shows available keymaps as you type a prefix (e.g. <leader>) — useful
 -- given how many custom <leader> mappings this config defines
 require("mini.clue").setup({
 	triggers = {
-		{ mode = "n", keys = "<Leader>" },
-		{ mode = "x", keys = "<Leader>" },
+		{ mode = { "n", "x" }, keys = "<Leader>" },
 		{ mode = "n", keys = "g" },
 		{ mode = "n", keys = "[" },
 		{ mode = "n", keys = "]" },
+		{ mode = { "n", "x" }, keys = '"' },
+		{ mode = { "i", "c" }, keys = "<C-r>" },
+		{ mode = { "n", "x" }, keys = "z" },
 	},
 	clues = {
 		require("mini.clue").gen_clues.builtin_completion(),
+		require("mini.clue").gen_clues.z(),
+		require("mini.clue").gen_clues.registers(),
+	},
+	window = {
+		delay = 0,
+
+		config = {
+			width = "auto",
+			border = "double",
+		},
 	},
 })
 
