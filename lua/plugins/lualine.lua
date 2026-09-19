@@ -1,10 +1,10 @@
-vim.pack.add({"https://github.com/nvim-lualine/lualine.nvim"})
+vim.pack.add({ "https://github.com/nvim-lualine/lualine.nvim" })
 
 -- statusline: theme "auto" pulls colors straight from melange's highlight
 -- groups (no dedicated melange lualine theme exists, so this generates one)
 require("lualine").setup({
 	options = {
-		theme = "auto", -- melange-nvim ships a dedicated lualine theme
+		theme = "gruvbox_dark", -- melange-nvim ships a dedicated lualine theme
 		icons_enabled = true,
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
