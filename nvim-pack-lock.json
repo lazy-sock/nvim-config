@@ -14,7 +14,7 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "crates.nvim": {
-      "rev": "b8281be336498035f9288d6542b2881a7140a9ec",
+      "rev": "7039bc1d130e424232a7aa64ceddb170a154ff5b",
       "src": "https://github.com/Saecki/crates.nvim"
     },
     "efmls-configs-nvim": {
@@ -22,7 +22,7 @@
       "src": "https://github.com/creativenull/efmls-configs-nvim"
     },
     "fzf-lua": {
-      "rev": "05e44d38de0a79c11fba5f7bf8138791b1dbdd1e",
+      "rev": "07fce8ac8dffba4e11f1cbe5490d730a2cc5ec7a",
       "src": "https://www.github.com/ibhagwan/fzf-lua"
     },
     "lualine.nvim": {
@@ -34,19 +34,19 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "9d01f392b33fb2ba36fbc87fc0bf4453e63ffb0a",
+      "rev": "a321b535c75ca88ba7fddfd8eb5b583fbda50dd6",
       "src": "https://www.github.com/echasnovski/mini.nvim"
     },
     "nvim-lspconfig": {
-      "rev": "ee1e369181a9e64904cdd7b739e98c70778cfc71",
+      "rev": "adfbb74472f6c231b651b650a89f414c2680fb31",
       "src": "https://www.github.com/neovim/nvim-lspconfig"
     },
     "nvim-tree.lua": {
-      "rev": "b2aadda94b107480c48e548d6db51c6840b7b33c",
+      "rev": "69eb0c34ed3d836d5a0d92d913b77dd73b054f2f",
       "src": "https://www.github.com/nvim-tree/nvim-tree.lua"
     },
     "nvim-treesitter": {
-      "rev": "427e9222363d07c32d6db6169e4049c28d58d141",
+      "rev": "0195cd62fa89950f34c0e0d648ea7897ab85d4d3",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-ts-context-commentstring": {
@@ -54,11 +54,15 @@
       "src": "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
     },
     "obsidian.nvim": {
-      "rev": "50be6d70988af31b71cd4d8675ca928e6194c4fb",
+      "rev": "15af492b64f4677959fe95008f1d5b782fe1f86a",
       "src": "https://github.com/obsidian-nvim/obsidian.nvim"
     },
+    "plantuml.nvim": {
+      "rev": "3dbed8c3e229d437708e9f8078a30dd56ede37c8",
+      "src": "https://gitlab.ruhr-uni-bochum.de/kozapaw8/plantuml.nvim.git"
+    },
     "rustaceanvim": {
-      "rev": "3c197924656a93cd3c1ee210e171032ce5c553ff",
+      "rev": "9c5c1aa055b33aa17d4f113724b1e5c4f1f77a1e",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "vim-tmux-navigator": {

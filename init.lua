@@ -26,6 +26,12 @@ vim.pack.add({
 		version = vim.version.range("1.*"),
 	},
 	"https://github.com/christoomey/vim-tmux-navigator",
+	"https://gitlab.ruhr-uni-bochum.de/kozapaw8/plantuml.nvim.git",
+})
+
+require("plantuml").setup({
+	auto_render = true,
+	preview = true,
 })
 
 local setup_treesitter = function()
