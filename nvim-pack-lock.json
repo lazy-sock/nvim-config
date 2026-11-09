@@ -25,6 +25,10 @@
       "rev": "07fce8ac8dffba4e11f1cbe5490d730a2cc5ec7a",
       "src": "https://www.github.com/ibhagwan/fzf-lua"
     },
+    "gruvbox.nvim": {
+      "rev": "48262cda6a8a921b159c8ec3e21b48ccd870b7b2",
+      "src": "https://github.com/ellisonleao/gruvbox.nvim"
+    },
     "lualine.nvim": {
       "rev": "221ce6b2d999187044529f49da6554a92f740a96",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
@@ -60,6 +64,10 @@
     "plantuml.nvim": {
       "rev": "3dbed8c3e229d437708e9f8078a30dd56ede37c8",
       "src": "https://gitlab.ruhr-uni-bochum.de/kozapaw8/plantuml.nvim.git"
+    },
+    "render-markdown.nvim": {
+      "rev": "9c235bedc4f96145e63fcad5b78cd78bce8822c4",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "rustaceanvim": {
       "rev": "9c5c1aa055b33aa17d4f113724b1e5c4f1f77a1e",

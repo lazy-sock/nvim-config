@@ -31,7 +31,12 @@ vim.pack.add({
 	},
 	"https://github.com/christoomey/vim-tmux-navigator",
 	"https://gitlab.ruhr-uni-bochum.de/kozapaw8/plantuml.nvim.git",
+	"https://github.com/ellisonleao/gruvbox.nvim",
+	"https://github.com/MeanderingProgrammer/render-markdown.nvim",
 })
+
+require("gruvbox").setup()
+vim.cmd.colorscheme("gruvbox")
 
 require("plantuml").setup({
 	auto_render = true,
