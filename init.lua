@@ -5,7 +5,7 @@ require("config.options")
 require("config.keymaps")
 require("plugins")
 
-vim.api.nvim_create_user_command("cheatsheet", function()
+vim.api.nvim_create_user_command("Cheatsheet", function()
 	vim.cmd("tabedit " .. vim.fn.stdpath("config") .. "/cheatsheet.md")
 end, {})
 
