@@ -81,3 +81,26 @@ qa - record macro a
 q - stop recording macro
 @a - run macro a
 @@ - rerun last run macro
+
+## Cut and paste
+yy - yank a line
+2yy - yank 2 lines
+yw - yank the characters of the word from the cursor position to the start of the next word
+yiw - yank word under the cursor
+yaw - yank word under the cursor and the space after of before it
+y$ or Y - yank to end of line
+p - put the clipboard after cursor
+P - put before cursor
+dd - delete a line
+2dd - delete 2 lines
+dw - delete the characters of the word from the cursor position to the start of the next word
+diw - delete word under cursor
+daw - delete word under the cursor and the space after or before it
+:3,5d - delete lines starting from 3 to 5
+
+## Exiting
+:w !sudo tee % - write out the current file using sudo
+
+## Terminal
+:term - enter Terminal mode
+Ctrl+\ Ctrl+n - switch from terminal mode to normal mode
