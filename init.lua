@@ -1,5 +1,4 @@
 vim.opt.termguicolors = true
-vim.cmd.colorscheme("lunaperche")
 
 require("config.options")
 require("config.keymaps")
