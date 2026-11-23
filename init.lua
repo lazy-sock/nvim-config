@@ -34,7 +34,6 @@ vim.pack.add({
 	"https://github.com/MeanderingProgrammer/render-markdown.nvim",
 })
 
-require("gruvbox").setup()
 vim.cmd.colorscheme("gruvbox")
 
 require("plantuml").setup({
