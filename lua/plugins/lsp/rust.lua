@@ -46,8 +46,10 @@ vim.g.rustaceanvim = function()
 						enable = true,
 						ignored = {},
 					},
-					checkOnSave = {
+					checkOnSave = true,
+					check = {
 						command = "clippy",
+						extraArgs = { "--no-deps" },
 					},
 				},
 			},
@@ -65,7 +67,15 @@ vim.keymap.set("n", "<leader>cd", "<cmd>Cargo doc<cr>", { desc = "Cargo Doc" })
 
 require("crates").setup()
 
-local bufnr = vim.api.nvim_get_current_buf()
-vim.keymap.set("n", "K", function()
-	vim.cmd.RustLsp({ "hover", "actions" })
-end, { silent = true, buffer = bufnr })
+local augroup = vim.api.nvim_create_augroup("RustLsp", { clear = true })
+vim.api.nvim_create_autocmd("LspAttach", {
+	group = augroup,
+	callback = function(ev)
+		local client = vim.lsp.get_client_by_id(ev.data.client_id)
+		if client and client.name == "rust-analyzer" then
+			vim.keymap.set("n", "K", function()
+				vim.cmd.RustLsp({ "hover", "actions" })
+			end, { silent = true, buffer = ev.buf, desc = "RustLsp hover actions" })
+		end
+	end,
+})

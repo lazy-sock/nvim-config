@@ -227,6 +227,7 @@ local function lsp_on_attach(ev)
 	end
 end
 
+local augroup = vim.api.nvim_create_augroup("UserLsp", { clear = true })
 vim.api.nvim_create_autocmd("LspAttach", { group = augroup, callback = lsp_on_attach })
 
 vim.keymap.set("n", "<leader>q", function()
